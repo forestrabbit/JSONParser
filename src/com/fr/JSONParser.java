@@ -25,10 +25,10 @@ public class JSONParser {
         try {
             if (data[ptr] == '/' && data[ptr + 1] == '/') {
                 parseSingleLineComment();
-                return null;
+                return parse();
             } else if (data[ptr] == '/' && data[ptr + 1] == '*') {
                 parseMultiLineComment();
-                return null;
+                return parse();
             } else if (data[ptr] == '"') {
                 return parseString();
             } else if (data[ptr] == 'n') {
