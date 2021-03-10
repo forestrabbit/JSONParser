@@ -67,7 +67,7 @@ public class JSONParser {
             ptr++;
         }
         line++;
-        ptr++;
+        ptr += 2;
     }
 
     /**
