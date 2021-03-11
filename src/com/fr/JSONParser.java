@@ -10,14 +10,11 @@ public class JSONParser {
 
     public JSONParser(String fileName) throws IOException {
         File file = new File(fileName);
-        data = new char[(int) file.length()];
+        data = new char[(int) file.length() * 2];
         ptr = 0;
 
         try (var reader = new InputStreamReader(new FileInputStream(file))) {
-            int x = reader.read(data);
-            if (x != file.length()) {
-                throw new IOException();
-            }
+            reader.read(data);
         }
     }
 

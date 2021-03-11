@@ -7,5 +7,6 @@
     { "firstName":"Bill" , "lastName":"Gates" },
     { "firstName":"George" , "lastName":"Bush" },
     { "firstName":"Thomas" , "lastName":"Carter" }
-  ]
+  ],
+  "name": "你好"
 }
